@@ -1,0 +1,31 @@
+.exercise {
+    display: flex;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.exercise__image--container {
+    background-color: white;
+    margin-right: 10px;
+}
+
+.exercise__image {
+    height: 60px;
+}
+
+.exercise__text--container {
+    height: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: var(--tertiary-background-grey);
+    font-size: 14px;
+    color: var(--main-text-grey);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.exercise__data {
+    margin-left: auto;
+}

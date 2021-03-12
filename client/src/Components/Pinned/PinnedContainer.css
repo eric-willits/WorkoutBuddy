@@ -1,0 +1,21 @@
+.pinned__container {
+    height: 100%;
+    background-color: var(--secondary-background-white);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pinned__container--header {
+    color: var(--main-text-grey);
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--main-background-grey);
+}
+
+.pinned__container--footer {
+    color: var(--blue-background);
+    font-size: 12px;
+    margin: 5px 0 0 auto;
+}

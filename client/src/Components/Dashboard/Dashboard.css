@@ -1,0 +1,39 @@
+.dashboard__container {
+    width: 375px;
+    height: 812px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background-grey);
+}
+
+.dashboard__header--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.1;
+}
+
+.dashboard__header {
+    color: var(--main-text-grey);
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.dashboard__pinned-exercises {
+    flex: 0.2;
+}
+
+.dashboard__add-workout {
+    flex: 0.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dashboard__workouts {
+    flex: 0.6;
+    padding: 10px;
+    background-color: var(--secondary-background-white);
+    overflow-y: scroll;
+}

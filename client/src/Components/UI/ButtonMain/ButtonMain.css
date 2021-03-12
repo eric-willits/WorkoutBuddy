@@ -1,0 +1,10 @@
+.buttonmain__button {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--main-text-grey);
+    background-color: var(--button-green-background);
+    padding: 5px;
+    border-radius: 5px;
+    border-color: var(--button-green-outline);
+    border-style: solid;
+}

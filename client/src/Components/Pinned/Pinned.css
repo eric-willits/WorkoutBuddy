@@ -1,0 +1,26 @@
+.pin__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tertiary-background-grey);
+    margin-top: 5px;
+}
+
+.pin__name {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 3px;
+    color: var(--black-text);
+}
+
+.pin__weight--container {
+    width: 20%;
+    background-color: var(--blue-background);
+    padding: 3px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pin__weight {
+    font-size: 12px;
+    color: var(--white-text);
+}

@@ -1,0 +1,135 @@
+.addworkout__modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: calc(812px * 0.9);
+    width: calc(375px * 0.9);
+    background-color: var(--modal-background-white);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--modal-shadow);
+    transform: translate(-50%, -50%);
+}
+
+.addworkout__button {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--main-text-grey);
+    background-color: var(--button-green-background);
+    padding: 5px;
+    border-radius: 5px;
+    border-color: var(--button-green-outline);
+    border-style: solid;
+}
+
+.addworkout__header {
+    font-size: 48px;
+    color: var(--main-text-grey);
+}
+
+.left__column {
+    flex: 0.3;
+}
+
+.right__column {
+    flex: 0.7;
+}
+
+.addworkout__date--container{
+    padding: 20px;
+    display: flex;
+}
+
+.addworkout__date--label {
+    color: var(--main-text-grey);
+    font-size: 14px;
+}
+
+.addworkout__date--input {
+    background-color: var(--input-background-grey);
+    border: none;
+    padding: 3px;
+    color: var(--main-text-grey);
+}
+
+.addworkout__muscleGroups--container{
+    display: flex;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--main-text-grey);
+
+}
+
+.addWorkout__inputs--container {
+    display: flex;
+}
+
+.addworkout__muscleGroups,
+.addworkout__muscleGroups{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addworkout__muscleGroups--button {
+    border-radius: 15px;
+    background-color: var(--input-background-grey);
+    border: none;
+    padding: 3px 15px;
+    margin: 5px 0;
+    color: var(--main-text-grey);
+}
+
+.addworkout__muscleGroups input {
+    display: none;
+}
+
+input[type=checkbox]:checked + label {
+    background-color: var(--blue-button-active);
+    color: var(--button-active-text);
+}
+
+.addworkout__addExercise--container{
+    padding-left: 20px;
+}
+
+.addworkout__exercises--container{
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.addworkout__notes--container{
+    padding: 20px;
+    display: flex;
+}
+
+.addworkout__notes--label {
+    color: var(--main-text-grey);
+    font-size: 14px;
+}
+
+.addworkout__notes--input {
+    width: 100%;
+    background-color: var(--input-background-grey);
+    border: none;
+}
+
+.addworkout__modal--submit{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:flex-end;
+}
+
+.addworkout__modal--background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 375px;
+    height: 812px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(112, 128, 144, 0.5);
+}

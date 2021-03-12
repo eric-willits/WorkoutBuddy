@@ -1,0 +1,18 @@
+.ui__radiobutton {
+    border-radius: 15px;
+    background-color: var(--input-background-grey);
+    border: none;
+    padding: 3px 15px;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    color: var(--main-text-grey);
+}
+
+.ui__radiobutton input {
+    display: none;
+}
+
+input[type=checkbox]:checked + label {
+    background-color: var(--blue-button-active);
+    color: var(--button-active-text);
+}

@@ -1,0 +1,7 @@
+.workouts__container--header {
+    color: var(--main-text-grey);
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--main-background-grey);
+}

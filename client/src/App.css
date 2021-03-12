@@ -1,0 +1,40 @@
+body {
+  --main-background-grey: #C4C4C4;
+  --main-text-grey: #565656;
+
+  --secondary-background-white: #EDEDED;
+
+  --tertiary-background-grey: #DADADA;
+
+  --blue-background: #322FD9;
+  --white-text: #E8E8E8;
+
+  --button-green-background: #71CD75;
+  --button-green-outline: #76FF7B;
+
+  --black-text: #2B2B2B;
+  --modal-background-white: #F2F2F2;
+
+  --input-background-grey: #CACACA;
+
+  --blue-button-active: #2C5AFF;
+  --button-active-text: #FFFFFF;
+
+  --modal-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+}
+
+.exercises__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

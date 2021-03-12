@@ -1,0 +1,73 @@
+.workout__container {
+    background-color: var(--tertiary-background-grey);
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--black-text);
+}
+
+.workout__header {
+    display: inline-block;
+}
+
+.workout__header--date {
+    font-size: 18px;
+}
+
+.workout__header--groups {
+    font-size: 16px;
+}
+
+.workout__exercise {
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.workout__modal--container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: calc(812px * 0.6);
+    width: calc(375px * 0.9);
+    background-color: var(--secondary-background-white);
+    padding: 10px;
+    box-shadow: var(--modal-shadow);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.workout__header--container {
+    color: var(--main-text-grey);
+    font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--main-background-grey);
+    margin-bottom: 10px;
+}
+
+
+.workout__modal--exerciseContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.workout__notes--container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.workout__notes {
+    color: var(--main-text-grey);
+    font-size: 14px;
+}
+
+.workout__modal--background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 812px;
+    width: 375px;
+    background-color: rgba(112, 128, 144, 0.5);
+    transform: translate(-50%, -50%);
+}

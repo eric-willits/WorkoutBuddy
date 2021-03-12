@@ -1,0 +1,21 @@
+//WORKOUTS
+export const GET_WORKOUTS = "GET_WORKOUTS";
+export const ADD_WORKOUT = "ADD_WORKOUT";
+
+//MASTER EXERCISES
+export const GET_EXERCISES = "GET_EXERCISES";
+
+//ERROR
+export const GET_ERRORS = 'GET_ERRORS';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';
+
+//AUTH
+export const USER_LOADING = "USER_LOADING";
+export const USER_LOADED = "USER_LOADED";
+export const AUTH_ERROR = "AUTH_ERROR";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const UPDATE_PINNED = "UPDATE_PINNED";
