@@ -26,8 +26,8 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    height: calc(812px * 0.6);
-    width: calc(375px * 0.9);
+    height: 60%;
+    width: 90%;
     background-color: var(--secondary-background-white);
     padding: 10px;
     box-shadow: var(--modal-shadow);
@@ -64,10 +64,16 @@
 
 .workout__modal--background {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    height: 812px;
-    width: 375px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background-color: rgba(112, 128, 144, 0.5);
-    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 400px) {
+    .workout__modal--container {
+        height: calc(812px * 0.6);
+        width: calc(375px * 0.9);
+    }
 }

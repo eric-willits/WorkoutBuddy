@@ -1,6 +1,6 @@
 .dashboard__container {
-    width: 375px;
-    height: 812px;
+    width: 100vw;
+    height: 100vh;
     padding: 10px;
     display: flex;
     flex-direction: column;

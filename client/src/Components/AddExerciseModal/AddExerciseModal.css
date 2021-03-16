@@ -97,8 +97,8 @@ input[type=radio]:checked + label {
     position: fixed;
     top: 50%;
     left: 50%;
-    height: calc(812px * 0.4);
-    width: calc(375px * 0.9);
+    height: 40%;
+    width: 90%;
     background-color: var(--modal-background-white);
     padding: 10px;
     box-shadow: var(--modal-shadow);
@@ -112,8 +112,15 @@ input[type=radio]:checked + label {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 375px;
-    height: 812px;
+    width: 100vw;
+    height: 100vh;
     transform: translate(-50%, -50%);
-    background-color: rgba(112, 128, 144, 0.7);
+    background-color: rgba(112, 128, 144, 0.5);
+}
+
+@media screen and (min-width: 400px) {
+    .addexercise__modal {
+        height: calc(812px * 0.4);
+        width: calc(375px * 0.9);
+    }
 }
