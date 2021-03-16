@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import "./Workout.css";
 import Exercise from '../../Exercise/Exercise';
+import EditWorkoutModal from '../../EditWorkoutModal/EditWorkoutModal'
+import { connect } from 'react-redux';
+import * as actions from '../../../store/actions';
 
-export default function Workout(props) {
+function Workout(props) {
     const [showDetails, setShowDetails] = useState(false);
 
     const date = props.workout.date.substring(5).replace("-", "/");
     const muscleGroups = props.workout.muscleGroups.map(group => `${group}`);
+
+    const onDelete = workoutId => {
+        setShowDetails(false);
+        props.deleteWorkout(workoutId);
+    }
 
     return (
         <>
@@ -28,6 +36,10 @@ export default function Workout(props) {
                             {props.workout.exercises.map((exercise, index) => <Exercise exercise={exercise} key={index}/>)}
                         </div>
                         <div className="workout__notes--container">
+                            <div className="workout__button--container">
+                                <button onClick={() => onDelete(props.workout._id)} className="workout__delete">delete</button>
+                                <EditWorkoutModal workout={props.workout}/>
+                            </div>
                             <p className="workout__notes">notes: {props.workout.notes}</p>
                         </div>
                     </div>
@@ -36,3 +48,11 @@ export default function Workout(props) {
         </>
     )
 }
+
+const mapDispatchToProps = dispatch => {
+    return {
+        deleteWorkout: workoutId => dispatch(actions.deleteWorkout(workoutId))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(Workout);

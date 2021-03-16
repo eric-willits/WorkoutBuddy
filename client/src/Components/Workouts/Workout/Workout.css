@@ -71,6 +71,20 @@
     background-color: rgba(112, 128, 144, 0.5);
 }
 
+.workout__button--container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.workout__delete {
+    color: red;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 3px;
+    width: fit-content;
+    margin-left: 15px;
+}
+
 @media screen and (min-width: 400px) {
     .workout__modal--container {
         height: calc(812px * 0.6);

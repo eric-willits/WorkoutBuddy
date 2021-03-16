@@ -25,3 +25,19 @@ export const getExercises = () => dispatch => {
             exercises: res.data
         }))
 }
+
+export const deleteWorkout = workoutId => (dispatch, getState) => {
+    axios.delete('/api/workouts', tokenConfig(getState))
+        .then(() => dispatch({
+            type: actionTypes.DELETE_WORKOUT,
+            workoutId
+        }))
+}
+
+export const updateWorkout = data => (dispatch, getState) => {
+    axios.put('/api/workouts', data, tokenConfig(getState))
+        .then(res => dispatch({
+            type: actionTypes.UPDATE_WORKOUT,
+            workout: res.data
+        }))
+}

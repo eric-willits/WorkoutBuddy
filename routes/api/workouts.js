@@ -27,4 +27,17 @@ router.post("/", auth, (req, res) => {
     })
 });
 
+//Update - update specific workout
+router.put("/", (req, res) => {
+    Workout.findByIdAndUpdate(req.body.id, {"$set": req.body.data}, {new: true})
+    .populate('exercises.exerciseId')
+        .then(workout => res.json(workout));
+})
+
+//Delete - delete workout
+router.delete("/", (req, res) => {
+    Workout.findByIdAndDelete(req.body.workoutId)
+        .then(() => res.json({workoutId: req.body.workoutId}))
+})
+
 module.exports = router;

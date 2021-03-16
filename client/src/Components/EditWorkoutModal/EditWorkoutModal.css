@@ -1,0 +1,161 @@
+.editworkout__modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 90vh;
+    width: 90vw;
+    background-color: var(--modal-background-white);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--modal-shadow);
+    transform: translate(-50%, -50%);
+}
+
+.editworkout__button--edit {
+    color: rgb(202, 202, 31);
+    background-color: transparent;
+    border: 1px solid rgb(202, 202, 31);
+    border-radius: 3px;
+    width: fit-content;
+}
+
+.editworkout__button--submit {
+    color: var(--button-green-background);
+    background-color: transparent;
+    border: 1px solid var(--button-green-background);
+    border-radius: 3px;
+    width: fit-content;
+}
+
+.editworkout__header {
+    font-size: 48px;
+    color: var(--main-text-grey);
+}
+
+.left__column {
+    flex: 0.3;
+}
+
+.right__column {
+    flex: 0.7;
+}
+
+.editworkout__date--container{
+    padding: 20px;
+    display: flex;
+}
+
+.editworkout__date--label {
+    color: var(--main-text-grey);
+    font-size: 14px;
+}
+
+.editworkout__date--input {
+    background-color: var(--input-background-grey);
+    border: none;
+    padding: 3px;
+    color: var(--main-text-grey);
+}
+
+.editworkout__muscleGroups--container{
+    display: flex;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--main-text-grey);
+
+}
+
+.editworkout__inputs--container {
+    display: flex;
+}
+
+.editworkout__muscleGroups,
+.editworkout__muscleGroups{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editworkout__muscleGroups--button {
+    border-radius: 15px;
+    background-color: var(--input-background-grey);
+    border: none;
+    padding: 3px 15px;
+    margin: 5px 0;
+    color: var(--main-text-grey);
+}
+
+.editworkout__muscleGroups input {
+    display: none;
+}
+
+input[type=checkbox]:checked + label {
+    background-color: var(--blue-button-active);
+    color: var(--button-active-text);
+}
+
+.editworkout__addExercise--container{
+    padding-left: 20px;
+}
+
+.editworkout__exercise--container{
+    position: relative;
+}
+
+.editworkout__deleteExercise {
+    color: red;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 10px;
+    width: fit-content;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+}
+
+.editworkout__exercises--container{
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.editworkout__notes--container{
+    padding: 20px;
+    display: flex;
+}
+
+.editworkout__notes--label {
+    color: var(--main-text-grey);
+    font-size: 14px;
+}
+
+.editworkout__notes--input {
+    width: 100%;
+    background-color: var(--input-background-grey);
+    border: none;
+}
+
+.editworkout__modal--submit{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:flex-end;
+}
+
+.editworkout__modal--background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 128, 144, 0.5);
+}
+
+@media screen and (min-width: 400px) {
+    .editworkout__modal {
+        height: calc(812px * 0.9);
+        width: calc(375px * 0.9);
+    }
+}

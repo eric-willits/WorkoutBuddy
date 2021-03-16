@@ -106,6 +106,7 @@ input[type=radio]:checked + label {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .addexercise__modal--background {

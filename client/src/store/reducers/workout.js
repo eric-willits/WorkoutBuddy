@@ -25,6 +25,19 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 masterExercises: action.exercises
             }
+        case(actionTypes.DELETE_WORKOUT) :
+            updatedWorkouts = [...state.workouts].filter(workout => workout._id !== action.workoutId);
+            return {
+                ...state,
+                workouts: updatedWorkouts
+            }
+        case(actionTypes.UPDATE_WORKOUT) :
+            updatedWorkouts = [...state.workouts].filter(workout => workout._id !== action.workout._id);
+            updatedWorkouts.push(action.workout);
+            return {
+                ...state,
+                workouts: updatedWorkouts
+            }
         default :
             return state;
     }
