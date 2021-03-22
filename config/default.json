@@ -1,4 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://ericwillits:eric123@workoutbuddy.va5lw.mongodb.net/workoutbuddy?retryWrites=true&w=majority",
-    "jwtSecret": "workoutbuddy_works"
-}
